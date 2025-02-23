@@ -1,0 +1,33 @@
+# The name of the mod loader type to load - for regular FML @Mod mods it should be javafml
+modLoader = "javafml"
+# A version range to match for said mod loader - for regular FML @Mod it will be the forge version
+loaderVersion = "[47,)"
+
+displayURL = "https://www.curseforge.com/minecraft/mc-mods/spice-of-life-ringo-pie-edition"
+logoFile = "logo 160.png"
+license = "LGPL-2.1"
+credits = "T-Niijima creator of Ringo Pie Edition, Vice, creator of Apple Pie Edition, Kevun1, creator of Spice of Life: Potato Edition, and the Spice of Life: Carrot Edition team, which that project was forked from."
+authors = "T-Niijima"
+
+[[mods]]
+	modId = "solringopie"
+	version = "${file.jarVersion}"
+	displayName = "Spice of Life: Ringo Pie Edition"
+	description = '''
+	A version of Spice of Life Apple Pie Edition with minor modifications and Japanese language support.
+'''
+
+# Dependencies are optional.
+[[dependencies]]
+	modId = "forge"
+	mandatory = true
+	versionRange = "[47,)"
+	ordering = "NONE" # BEFORE or AFTER required if the relationship is not mandatory
+	side = "BOTH" # BOTH, CLIENT or SERVER
+
+[[dependencies]]
+	modId = "minecraft"
+	mandatory = true
+	versionRange = "[1.20.1,)"
+	ordering = "NONE"
+	side = "BOTH"

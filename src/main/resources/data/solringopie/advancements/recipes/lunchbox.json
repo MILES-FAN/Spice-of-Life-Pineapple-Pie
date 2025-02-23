@@ -1,0 +1,38 @@
+{
+  "rewards": {
+    "recipes": [
+      "solringopie:lunchbox"
+    ]
+  },
+  "criteria": {
+    "has_iron_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "item": "minecraft:iron_ingot" }
+        ]
+      }
+    },
+    "has_lunchbag": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {  "item": "solringopie:lunchbag" }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "solringopie:lunchbox"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_iron_ingot",
+      "has_lunchbag",
+      "has_the_recipe"
+    ]
+  ]
+}
