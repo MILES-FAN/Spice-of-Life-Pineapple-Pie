@@ -5,8 +5,11 @@ import com.rizastar.solringopie.tracking.FoodInstance;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.ResourceLocationException;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.registries.ForgeRegistries;
 
+import java.sql.SQLData;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -42,6 +45,16 @@ public class ComplexityParser {
             }
             if (item == null) {
                 SOLRingoPie.LOGGER.warn("Invalid item name: " + foodString);
+                continue;
+            }
+
+            String modIdForItem = foodString.split(":")[0];
+//            String isLoaded = ModList.get().isLoaded(modIdForItem) ? "YES" : "NO";
+//            String infoMsg = "MOD '" + modIdForItem + "' for " + foodString + " is loaded : " + isLoaded;
+//            SOLRingoPie.LOGGER.info(infoMsg);
+            if (!ModList.get().isLoaded(modIdForItem)) {
+                String msg = "MOD '" + modIdForItem + "' is not load : " + foodString;
+                SOLRingoPie.LOGGER.info(msg);
                 continue;
             }
 
