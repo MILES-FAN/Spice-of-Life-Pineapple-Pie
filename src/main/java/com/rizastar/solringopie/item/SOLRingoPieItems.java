@@ -1,14 +1,10 @@
 package com.rizastar.solringopie.item;
 
-import com.rizastar.solringopie.crafting.LunchboxUpgradeRecipe;
-import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import com.rizastar.solringopie.SOLRingoPie;
 import com.rizastar.solringopie.item.foodcontainer.FoodContainerItem;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.crafting.RecipeSerializer;
-import net.minecraftforge.common.extensions.IForgeMenuType;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegisterEvent;
@@ -18,7 +14,6 @@ import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
 
 import static net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus.MOD;
-import static net.minecraftforge.registries.ForgeRegistries.Keys.RECIPE_SERIALIZERS;
 
 @Mod.EventBusSubscriber(modid = SOLRingoPie.MOD_ID, bus = MOD)
 public final class SOLRingoPieItems
@@ -30,9 +25,6 @@ public final class SOLRingoPieItems
 	public static final RegistryObject<Item> LUNCHBOX = ITEMS.register("lunchbox", () -> new FoodContainerItem(9, "lunchbox"));
 	public static final RegistryObject<Item> LUNCHBAG = ITEMS.register("lunchbag", () -> new FoodContainerItem(5, "lunchbag"));
 	public static final RegistryObject<Item> GOLDEN_LUNCHBOX = ITEMS.register("golden_lunchbox", () -> new FoodContainerItem(14, "golden_lunchbox"));
-
-	public static final RegistryObject<RecipeSerializer<?>> LUNCHBOX_UPGRADE_RECIPE_SERIALIZER = RECIPE_SERIALIZERS.register("lunchbox_upgrade", LunchboxUpgradeRecipe.Serializer::new);
-
 
 	@SubscribeEvent
 	public static void registerItems(RegisterEvent event) {

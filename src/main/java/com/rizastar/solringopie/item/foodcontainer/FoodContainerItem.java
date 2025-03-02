@@ -1,7 +1,9 @@
 package com.rizastar.solringopie.item.foodcontainer;
 
+import com.rizastar.solringopie.SOLRingoPie;
 import com.rizastar.solringopie.integration.Origins;
 import com.rizastar.solringopie.tracking.FoodList;
+import net.minecraft.world.Container;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.server.level.ServerPlayer;
@@ -9,17 +11,22 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.inventory.CraftingContainer;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.capabilities.ICapabilityProvider;
 import net.minecraftforge.event.ForgeEventFactory;
+import net.minecraftforge.event.entity.player.PlayerEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModList;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.items.ItemStackHandler;
 
 import javax.annotation.Nullable;
 
+@Mod.EventBusSubscriber(modid = SOLRingoPie.MOD_ID)
 public class FoodContainerItem extends Item {
     private String displayName;
     private int nslots;
@@ -29,6 +36,23 @@ public class FoodContainerItem extends Item {
 
         this.displayName = displayName;
         this.nslots = nslots;
+    }
+
+    @SubscribeEvent
+    public static void onCraftItem(PlayerEvent.ItemCraftedEvent event) {
+        Container container = event.getInventory();
+        int size = container.getContainerSize();
+        for (int i = 0 ; i < size ; i++) {
+            Item item = container.getItem(i).getItem();
+            if (item instanceof FoodContainerItem foodContainerItem) {
+                // --- コンテナアイテム使ったクラフトの場合
+                // --- そのアイテムの中身を、新しいアイテムの中身にコピーする
+                ItemStackHandler handler = getInventory(event.getCrafting());
+                ItemStackHandler oldHander = getInventory(container.getItem(i));
+                for (int j = 0 ; j < foodContainerItem.nslots ; j++)
+                    handler.setStackInSlot(j, oldHander.getStackInSlot(j));
+            }
+        }
     }
 
     @Override
