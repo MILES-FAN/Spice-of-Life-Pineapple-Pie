@@ -1,0 +1,48 @@
+{
+	"tooltip.solpineapplepie.disabled": "この食品は 幸腹度（diversity）システムに対応していません.",
+	
+	"command.solpineapplepie.solpineapplepie.no_permissions": "あなたは、このコマンドを他のプレイヤーに適用するために必要な権限を持っていません！",
+
+	"command.solpineapplepie.solpineapplepie.clear.success": "喫食履歴のリセット！",
+	"command.solpineapplepie.solpineapplepie.diversity_feedback": "幸腹度: %.2f",
+	"command.solpineapplepie.solpineapplepie.sync.success": "食品リストを同期しました!",
+
+	"tooltip.solpineapplepie.lunchbox.diversity": "このランチボックスの次の食品は、幸腹度に貢献します: %s",
+	"tooltip.solpineapplepie.container.contents": "内容:",
+	"tooltip.solpineapplepie.container.empty": "空",
+
+	"item.solpineapplepie.food_book": "フードブック",
+	"item.solpineapplepie.lunchbox": "鉄のランチボックス",
+	"item.solpineapplepie.container.lunchbox": "鉄のランチボックス",
+    "item.solpineapplepie.golden_lunchbox": "金のランチボックス",
+    "item.solpineapplepie.container.golden_lunchbox": "金のランチボックス",
+	"item.solpineapplepie.lunchbag": "ランチバッグ",
+	"item.solpineapplepie.container.lunchbag": "ランチバッグ",
+
+	"key.solpineapplepie.open_food_book": "フードブックを開く",
+	"key.solpineapplepie.category": "Spice of Life: Ringo Pie Edition",
+	
+	"gui.solpineapplepie.food_book.stats": "概要",
+	"gui.solpineapplepie.food_book.stats.current_diversity": "現在の幸腹度",
+	"gui.solpineapplepie.food_book.stats.min_warning1": "報酬を受け取るにはあと %d 種類の",
+	"gui.solpineapplepie.food_book.stats.min_warning2": "食品を食べる必要がある",
+	"gui.solpineapplepie.food_book.active_benefits_header": "有効な報酬",
+	"gui.solpineapplepie.food_book.inactive_benefits_header": "有効になっていない報酬",
+	"gui.solpineapplepie.food_book.benefits.threshold_label": "必要幸腹度",
+	"gui.solpineapplepie.food_book.benefits.active_tooltip": "必要値以上の幸腹度を持っているならば、報酬を受け取るがことができます.",
+	"gui.solpineapplepie.food_book.benefits.inactive_tooltip": "必要値以上の幸腹度を持っているならば、報酬が有効になります.",
+	"gui.solpineapplepie.food_book.food_queue_label": "食べた食品",
+	"gui.solpineapplepie.food_book.queue.food_queue_tooltip": "あなたの食の多様性、幸腹度に寄与する、過去に食べたすべての食品のリストです.",
+
+	"gui.solpineapplepie.food_book.fraction": "%1$s/%2$s",
+
+	"gui.solpineapplepie.food_book.queue.tooltip.uneaten_contribution_label": "幸腹度",
+	"gui.solpineapplepie.food_book.queue.tooltip.contribution_label": "幸腹度",
+	"gui.solpineapplepie.food_book.queue.tooltip.last_eaten_label": "最後に食べたのは：%d回前の食事",
+	"gui.solpineapplepie.food_book.queue.tooltip.last_eaten_label_singular": "最後に食べたのは：%d回前の食事",
+	
+	"config.solpineapplepie.is_food_tooltip_enabled": "Enable Food Tooltip",
+	"config.solpineapplepie.food_blacklist": "ブラックリスト",
+	"config.solpineapplepie.food_whitelist": "ホワイトリスト (disables blacklist)",
+	"config.solpineapplepie.reset_on_death": "死亡するとリセットされる"
+}

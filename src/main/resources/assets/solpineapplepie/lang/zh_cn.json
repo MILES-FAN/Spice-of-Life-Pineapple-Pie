@@ -1,0 +1,48 @@
+{
+	"tooltip.solpineapplepie.disabled": "这个食物不会贡献饮食多样性",
+	
+	"command.solpineapplepie.solpineapplepie.no_permissions": "你没有权限使用这个命令",
+
+	"command.solpineapplepie.solpineapplepie.clear.success": "食物列表已清除！",
+	"command.solpineapplepie.solpineapplepie.diversity_feedback": "饮食多样性: %.2f",
+	"command.solpineapplepie.solpineapplepie.sync.success": "食物列表已同步！",
+
+	"tooltip.solpineapplepie.lunchbox.diversity": "这个午餐盒中的下一个食物的饮食多样性为: %s",
+	"tooltip.solpineapplepie.container.contents": "内容物:",
+	"tooltip.solpineapplepie.container.empty": "空",
+
+	"item.solpineapplepie.food_book": "食物书",
+	"item.solpineapplepie.lunchbox": "午餐盒",
+	"item.solpineapplepie.container.lunchbox": "午餐盒",
+    "item.solpineapplepie.golden_lunchbox": "金午餐盒",
+    "item.solpineapplepie.container.golden_lunchbox": "金午餐盒",
+	"item.solpineapplepie.lunchbag": "午餐袋",
+	"item.solpineapplepie.container.lunchbag": "午餐袋",
+
+	"key.solpineapplepie.open_food_book": "打开食物书",
+	"key.solpineapplepie.category": "Spice of Life: Apple Pie Edition",
+	
+	"gui.solpineapplepie.food_book.stats": "概览",
+	"gui.solpineapplepie.food_book.stats.current_diversity": "现在的饮食多样性",
+	"gui.solpineapplepie.food_book.stats.min_warning1": "还需要吃 %d 次",
+	"gui.solpineapplepie.food_book.stats.min_warning2": "以激活增益",
+	"gui.solpineapplepie.food_book.active_benefits_header": "活跃增益",
+	"gui.solpineapplepie.food_book.inactive_benefits_header": "非活跃增益",
+	"gui.solpineapplepie.food_book.benefits.threshold_label": "阈值",
+	"gui.solpineapplepie.food_book.benefits.active_tooltip": "因为你的饮食多样性大于这个阈值，这个增益被激活。",
+	"gui.solpineapplepie.food_book.benefits.inactive_tooltip": "如果你的饮食多样性大于这个阈值，这个增益将被激活。",
+	"gui.solpineapplepie.food_book.food_queue_label": "吃过的食物",
+	"gui.solpineapplepie.food_book.queue.food_queue_tooltip": "一个你吃过的食物列表，这些食物会贡献饮食多样性。",
+
+	"gui.solpineapplepie.food_book.fraction": "%1$s/%2$s",
+
+	"gui.solpineapplepie.food_book.queue.tooltip.uneaten_contribution_label": "饮食多样性",
+	"gui.solpineapplepie.food_book.queue.tooltip.contribution_label": "多样性贡献",
+	"gui.solpineapplepie.food_book.queue.tooltip.last_eaten_label": "最后吃过: %d 餐前",
+	"gui.solpineapplepie.food_book.queue.tooltip.last_eaten_label_singular": "最后吃过: %d 餐前",
+	
+	"config.solpineapplepie.is_food_tooltip_enabled": "启用食物提示",
+	"config.solpineapplepie.food_blacklist": "黑名单",
+	"config.solpineapplepie.food_whitelist": "白名单（禁用黑名单）",
+	"config.solpineapplepie.reset_on_death": "死亡重置"
+}

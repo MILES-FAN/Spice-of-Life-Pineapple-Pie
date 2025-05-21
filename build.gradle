@@ -42,7 +42,7 @@ minecraft {
 			property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
 
 			mods {
-				solringopie {
+				SOLPineapplePie {
 					source sourceSets.main
 				}
 			}
@@ -60,7 +60,7 @@ minecraft {
 			property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
 
 			mods {
-				solringopie {
+				SOLPineapplePie {
 					source sourceSets.main
 				}
 			}
@@ -77,10 +77,10 @@ minecraft {
 			property 'mixin.env.remapRefMap', 'true'
 			property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
 
-			args '--mod', 'solringopie', '--all', '--output', file('src/generated/resources/')
+			args '--mod', 'SOLPineapplePie', '--all', '--output', file('src/generated/resources/')
 			
 			mods {
-				solringopie {
+				SOLPineapplePie {
 					source sourceSets.main
 				}
 			}
@@ -140,12 +140,12 @@ dependencies {
 jar {
 	manifest {
 		attributes([
-			"Specification-Title": "solringopie",
-			"Specification-Vendor": "solringopietarinoita",
+			"Specification-Title": "SOLPineapplePie",
+			"Specification-Vendor": "SOLPineapplePiemilesfan",
 			"Specification-Version": "1", // We are version 1 of ourselves
 			"Implementation-Title": project.name,
 			"Implementation-Version": "${version}",
-			"Implementation-Vendor" :"solringopietarinoita",
+			"Implementation-Vendor" :"SOLPineapplePiemilesfan",
 			"Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
 		])
 	}
@@ -160,6 +160,19 @@ def reobfArtifact = artifacts.add('default', reobfFile) {
 	type 'jar'
 	builtBy 'reobfJar'
 }
+
+task copyAndRenameJar(type: Copy, dependsOn: 'reobfJar') {
+    from("$buildDir/reobfJar/output.jar")
+    into("$buildDir/mods")
+    rename('output.jar', "${project.name}-${version}.jar")
+    doLast {
+        println "Created ${project.name}-${version}.jar in $buildDir/mods"
+    }
+}
+
+// Make sure this task runs after reobfJar
+build.dependsOn copyAndRenameJar
+
 publishing {
 	publications {
 		mavenJava(MavenPublication) {

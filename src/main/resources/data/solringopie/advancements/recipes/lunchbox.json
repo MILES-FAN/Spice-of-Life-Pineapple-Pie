@@ -1,7 +1,7 @@
 {
   "rewards": {
     "recipes": [
-      "solringopie:lunchbox"
+      "solpineapplepie:lunchbox"
     ]
   },
   "criteria": {
@@ -17,14 +17,14 @@
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
-          {  "item": "solringopie:lunchbag" }
+          {  "item": "solpineapplepie:lunchbag" }
         ]
       }
     },
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "solringopie:lunchbox"
+        "recipe": "solpineapplepie:lunchbox"
       }
     }
   },

@@ -1,7 +1,7 @@
 {
   "rewards": {
     "recipes": [
-      "solringopie:lunchbag"
+      "solpineapplepie:lunchbag"
     ]
   },
   "criteria": {
@@ -16,7 +16,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "solringopie:lunchbag"
+        "recipe": "solpineapplepie:lunchbag"
       }
     }
   },

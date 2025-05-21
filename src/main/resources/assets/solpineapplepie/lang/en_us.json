@@ -1,0 +1,48 @@
+{
+	"tooltip.solpineapplepie.disabled": "This food does not contribute to food diversity.",
+	
+	"command.solpineapplepie.solpineapplepie.no_permissions": "You do not have the permissions necessary to apply this command to other players!",
+
+	"command.solpineapplepie.solpineapplepie.clear.success": "Food list reset!",
+	"command.solpineapplepie.solpineapplepie.diversity_feedback": "Food Diversity: %.2f",
+	"command.solpineapplepie.solpineapplepie.sync.success": "Food list synchronized!",
+
+	"tooltip.solpineapplepie.lunchbox.diversity": "Next food in the container has food diversity of: %s",
+	"tooltip.solpineapplepie.container.contents": "Contents:",
+	"tooltip.solpineapplepie.container.empty": "Empty",
+
+	"item.solpineapplepie.food_book": "Food Book",
+	"item.solpineapplepie.lunchbox": "Lunchbox",
+	"item.solpineapplepie.container.lunchbox": "Lunchbox",
+    "item.solpineapplepie.golden_lunchbox": "Golden Lunchbox",
+    "item.solpineapplepie.container.golden_lunchbox": "Golden Lunchbox",
+	"item.solpineapplepie.lunchbag": "Lunchbag",
+	"item.solpineapplepie.container.lunchbag": "Lunchbag",
+
+	"key.solpineapplepie.open_food_book": "Open Food Book",
+	"key.solpineapplepie.category": "Spice of Life: Apple Pie Edition",
+	
+	"gui.solpineapplepie.food_book.stats": "Overview",
+	"gui.solpineapplepie.food_book.stats.current_diversity": "Current Food Diversity",
+	"gui.solpineapplepie.food_book.stats.min_warning1": "Need to eat %d more times",
+	"gui.solpineapplepie.food_book.stats.min_warning2": "to activate benefits",
+	"gui.solpineapplepie.food_book.active_benefits_header": "Active Benefits",
+	"gui.solpineapplepie.food_book.inactive_benefits_header": "Inactive Benefits",
+	"gui.solpineapplepie.food_book.benefits.threshold_label": "Threshold",
+	"gui.solpineapplepie.food_book.benefits.active_tooltip": "Because your food diversity is greater than this threshold, this benefit is active.",
+	"gui.solpineapplepie.food_book.benefits.inactive_tooltip": "If your food diversity becomes greater than this threshold, this benefit will activate.",
+	"gui.solpineapplepie.food_book.food_queue_label": "Food Eaten",
+	"gui.solpineapplepie.food_book.queue.food_queue_tooltip": "A list of all foods eaten in the past that contribute to your food diversity.",
+
+	"gui.solpineapplepie.food_book.fraction": "%1$s/%2$s",
+
+	"gui.solpineapplepie.food_book.queue.tooltip.uneaten_contribution_label": "Food Diversity",
+	"gui.solpineapplepie.food_book.queue.tooltip.contribution_label": "Diversity Contribution",
+	"gui.solpineapplepie.food_book.queue.tooltip.last_eaten_label": "Last eaten: %d meals ago",
+	"gui.solpineapplepie.food_book.queue.tooltip.last_eaten_label_singular": "Last eaten: %d meal ago",
+	
+	"config.solpineapplepie.is_food_tooltip_enabled": "Enable Food Tooltip",
+	"config.solpineapplepie.food_blacklist": "Blacklist",
+	"config.solpineapplepie.food_whitelist": "Whitelist (disables blacklist)",
+	"config.solpineapplepie.reset_on_death": "Reset on Death"
+}

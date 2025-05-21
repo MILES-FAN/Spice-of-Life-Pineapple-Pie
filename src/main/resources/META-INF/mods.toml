@@ -6,15 +6,15 @@ loaderVersion = "[47,)"
 displayURL = "https://www.curseforge.com/minecraft/mc-mods/spice-of-life-ringo-pie-edition"
 logoFile = "logo 160.png"
 license = "LGPL-2.1"
-credits = "T-Niijima creator of Ringo Pie Edition, Vice, creator of Apple Pie Edition, Kevun1, creator of Spice of Life: Potato Edition, and the Spice of Life: Carrot Edition team, which that project was forked from."
-authors = "T-Niijima"
+credits = "MilesFan, T-Niijima creator of Ringo Pie Edition, Vice, creator of Apple Pie Edition, Kevun1, creator of Spice of Life: Potato Edition, and the Spice of Life: Carrot Edition team, which that project was forked from."
+authors = "MilesFan"
 
 [[mods]]
-	modId = "solringopie"
+	modId = "solpineapplepie"
 	version = "${file.jarVersion}"
-	displayName = "Spice of Life: Ringo Pie Edition"
+	displayName = "Spice of Life: Pineapple Pie Edition"
 	description = '''
-	A version of Spice of Life Apple Pie Edition with minor modifications and Japanese language support.
+	A version of Spice of Life Ringo Pie Edition that fixed the bugs in the original mod and added some new QoL features for lunch boxes.
 '''
 
 # Dependencies are optional.
